@@ -1,0 +1,14 @@
+name: branch workflow
+
+run-name: branch workflow
+on: 
+  push:
+   branches-ignore:
+     - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: branch step
+        shell: bash
+        run: echo "branch-ignore workflow successfull"
