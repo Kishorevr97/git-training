@@ -1,0 +1,10 @@
+name: manual workflow
+
+run-name: manual workflow
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manual step
+        run: echo "manual workflow successfull"
