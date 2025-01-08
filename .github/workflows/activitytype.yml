@@ -1,0 +1,11 @@
+name: activity workflow
+run-name: activity workflow
+on: 
+  pull_request:
+    types: opened
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "activity workflow successfull"
