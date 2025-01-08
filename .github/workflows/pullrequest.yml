@@ -1,0 +1,9 @@
+name: pullrequest workflow
+run-name: pullrequest workflow
+on: pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "pull workflow successfull"
