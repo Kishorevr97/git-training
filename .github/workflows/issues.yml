@@ -1,0 +1,11 @@
+name: issues workflow
+
+run-name: issues workflow
+on: issues
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: issues step
+        shell: bash
+        run: echo "issues workflow successfull"
