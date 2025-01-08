@@ -1,0 +1,11 @@
+name: windows workflow
+
+run-name: second workflow
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: first step
+        shell: bash
+        run: echo "windows workflow successfull"
