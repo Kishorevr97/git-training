@@ -1,0 +1,13 @@
+name: path workflow
+
+run-name: path workflow
+on: 
+  push:
+   paths:
+     - '**.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: branch step
+        run: echo "path workflow successfull"
